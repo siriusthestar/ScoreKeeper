@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RelLayout1">
+
+    <LinearLayout
+        style="@style/LinLayout2">
+
+        <LinearLayout
+            style="@style/LinLayout">
+
+            <TextView
+                style="@style/TextView2"
+                android:text="@string/team1"  />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/TextView1" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Button"
+                android:onClick="addRunForTeamA"
+                android:text="@string/run" />
+
+            <TextView
+                android:id="@+id/team_a_outs"
+                style="@style/TextView1" />
+
+            <Button
+                style="@style/Button"
+                android:onClick="addOutForTeamA"
+                android:text="@string/out" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/View"/>
+
+        <LinearLayout
+            style="@style/LinLayout">
+
+            <TextView
+                style="@style/TextView2"
+                android:text="@string/team2" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/TextView1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Button"
+                android:onClick="addRunForTeamB"
+                android:text="@string/run" />
+
+            <TextView
+                android:id="@+id/team_b_outs"
+                style="@style/TextView1"/>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Button"
+                android:onClick="addOutForTeamB"
+                android:text="@string/out" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        style="@style/RelLayout2">
+
+        <ImageView
+            style="@style/ImageView"/>
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Button2"
+            android:onClick="resetScore"
+            android:text="Reset" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

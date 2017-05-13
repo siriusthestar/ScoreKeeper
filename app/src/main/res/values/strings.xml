@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="team1">Team A</string>
+    <string name="team2">Team B</string>
+    <string name="run">Run</string>
+    <string name="out">Out</string>
+    <string name="zero">0</string>
+    <string name="reset">reset</string>
+</resources>
