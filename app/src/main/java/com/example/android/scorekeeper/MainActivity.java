@@ -7,39 +7,37 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Team A
+     */
+    int scoreTeamA = 0;
+    int outsTeamA = 0;
+    /**
+     * Team B
+     */
+    int scoreTeamB = 0;
+    int outsTeamB = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    /**
-     * Team A.
-     */
-    int scoreTeamA = 0;
 
     public void addRunForTeamA(View v) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
 
-    int outsTeamA = 0;
-
     public void addOutForTeamA(View v) {
         outsTeamA = outsTeamA + 1;
         displayOutsForTeamA(outsTeamA);
     }
 
-    /**
-     * Team B.
-     */
-    int scoreTeamB = 0;
-
     public void addRunForTeamB(View v) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
-
-    int outsTeamB = 0;
 
     public void addOutForTeamB(View v) {
         outsTeamB = outsTeamB + 1;
@@ -48,9 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * Reset.
+     * Reset
      */
-
     public void resetScore (View v) {
         scoreTeamA = 0;
         scoreTeamB = 0;
@@ -63,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given score for Team A.
+     * Displays the given score for Team A
      */
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
@@ -78,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given outs for Team A.
+     * Displays the given outs for Team A
      */
     public void displayOutsForTeamA(int outs) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_outs);
